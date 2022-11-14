@@ -1,0 +1,104 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WRITE YOUR NOTES DOWN NOW!!!!!</title>
+    <link rel="stylesheet" type="text/css" href="notes.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="notes.js">
+    </script>
+  </head>
+
+  <body>
+    <h1>WRITE YOUR NOTES DOWN NOW!!!!!</h1>
+    <div id="wrapper">
+      <div id="noteSpace"></div>
+      <div id="dashboard">
+        <div class="writersblock"> 
+   <button id="id_fillAll" onclick="fillAll()" style="width:250px">Fill from programmed notes</button ></div>
+
+        <div class="writersblock">
+          <button id="id_createpara1" onclick="createNote()">Create</button>
+          <label for="paragraphNum"> Ad Number </label>
+
+          <input
+            type="text"
+            id="id_noteNumberToCreate"
+            name="name_couponNumberToCreate"
+            value="2"
+            maxlength="2"
+            size="2">
+            <br>
+            <br>
+
+          <label for="freeform"> </label> Enter your notes or press button for programmed notes. 
+          <br>
+          <br>
+
+          <button id="id_randomfill" onclick="randomParagraph()">Random fill</button>
+            <br/>
+            <textarea
+              id="id_freeform"
+              name="name_freeform"
+              rows="4"
+              cols="50">
+          Enter notes here please.
+          </textarea>
+
+          </div>
+
+          <div class="writersblock">
+            <button id="id_temporarilyRemove" onclick="temporarilyRemove()" style="width: 200px;">Temporarily remove note </button><input
+            type="text"
+            id="id_paraNumberToDetach"
+            name="name_paraNumberToDetach"
+            value="2"
+            maxlength="2"
+            size="2"/>
+          <br>
+          <br>
+
+           <button id="id_restorenumber" onclick="restorePara()" style="width: 100px;">Restore</button>
+           <br>
+           <br>
+              <button id="btn_getRidOf" onclick="removeAd()" style="width: 200px;">Get Rid Of note</button><input
+            type="text"
+            id="id_paraNumberToRemove"
+            name="name_paraNumberToRemove"
+            value="2"
+            maxlength="2"
+            size="2"/>
+
+          <br>
+          <br>
+
+            <button id="btn_getRidOf" onclick="getRidOfAll()" style="width: 200px;">Clear out All notes</button>
+          </div>
+
+          <div class="writersblock">
+          <button id="id_" onclick="highlightNote()" style="width: 200px;"> Highlight Note border </button>
+
+          <input
+            type="text"
+            id="id_seasonizeparagraph"
+            name="name_seasonizeparagraph"
+            value="2"
+            maxlength="2"
+            size="2"/>
+
+             <label for="id_seasonizepara"> <br> Use dropdown menu for importance of note:</label>
+                <select name="name_seasonizeparaseasons" id="id_seasonizeparaseasons">
+                <option value="Regular">Regular</option>
+                <option value="Important">Important</option> 
+                </select> 
+
+            <br />
+          </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
